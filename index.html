@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Process Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- ใช้ Chart.js สำหรับกราฟ -->
+</head>
+<body>
+    <header>
+        <h1>Chemical Process Simulator</h1>
+        <p>จำลองกระบวนการผลิตในอุตสาหกรรมเคมี</p>
+    </header>
+
+    <section id="simulation-section">
+        <h2>เลือกตัวแปรในการจำลองกระบวนการ</h2>
+        <form id="simulation-form">
+            <label for="temperature">อุณหภูมิ (°C):</label>
+            <input type="number" id="temperature" name="temperature" min="100" max="1000" value="400" required><br>
+
+            <label for="pressure">ความดัน (atm):</label>
+            <input type="number" id="pressure" name="pressure" min="1" max="300" value="200" required><br>
+
+            <label for="catalyst">ชนิดตัวเร่งปฏิกิริยา:</label>
+            <select id="catalyst" name="catalyst">
+                <option value="iron">เหล็ก</option>
+                <option value="ruthenium">รูเธเนียม</option>
+                <option value="platinum">แพลตินัม</option>
+            </select><br>
+
+            <button type="button" onclick="simulateProcess()">จำลองกระบวนการ</button>
+        </form>
+    </section>
+
+    <section id="result-section">
+        <h2>ผลการจำลองกระบวนการ</h2>
+        <p id="output"></p>
+    </section>
+
+    <section id="graph-section">
+        <h2>กราฟผลกระทบของตัวแปร</h2>
+        <canvas id="result-graph"></canvas>
+    </section>
+
+    <script src="script.js"></script> <!-- เชื่อมโยงไปยังไฟล์ JavaScript -->
+</body>
+</html>

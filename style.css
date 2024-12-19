@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E8B57; /* สีเขียวน้ำทะเล */
+}
+
+header {
+    background-color: #20B2AA; /* สีเขียวน้ำทะเลเข้ม */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #20B2AA; /* สีเขียวน้ำทะเลเข้ม */
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3CB371; /* สีเขียวมรกต */
+}
+
+#result-section {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00796b;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}
